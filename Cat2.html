@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops! Wrong Answer 😢</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: rgb(255, 230, 230);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        h1 {
+            color: red;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .message-box {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 400px;
+        }
+        .retry-button {
+            background: red;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin-top: 20px;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+            animation: bounce 1.5s infinite;
+        }
+        .retry-button:hover {
+            background: darkred;
+            transform: scale(1.1);
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHh0OG9lZXlkcmQzNjQxcGJ5eDkyZW8yeGptcWYzM2JtZm03enZ0byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3OhXBaoR1tVPW/giphy.gif" alt="Sad GIF">
+    
+    <div class="message-box">
+        <h1>😢</h1>
+        
+        <button class="retry-button" onclick="window.location.href='Cat1.html'">Try Again</button>
+    </div>
+
+</body>
+</html>

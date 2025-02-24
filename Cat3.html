@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correct!</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: rgb(255, 223, 186);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        
+        h1 {
+            color: green;
+        }
+        .retry-button {
+            background: red;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin-top: 20px;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+            animation: bounce 1.5s infinite;
+        }
+        .retry-button:hover {
+            background: darkred;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Correct! ❤️ You know me well!</h1>
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTVxdWdpYXQ3ajdwY2Fmd3IwcmxmNzcwZGVrcmR6dmJuNzVtZXFlNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/BK1EfIsdkKZMY/giphy.gif" alt="Happy GIF">
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "Cat4.html";
+        }, 3000); // Redirect to surprise page after 3 seconds
+    </script>
+<button class="retry-button" onclick="window.location.href='Cat1.html'">Try Again</button>
+</body>
+</html>

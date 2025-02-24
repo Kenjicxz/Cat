@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Answers</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        #answers {
+            margin-top: 20px;
+            font-size: 20px;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        button {
+            font-size: 16px;
+            padding: 8px 15px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin Panel - Answers</h1>
+    <p id="answers">Loading...</p>
+    <button onclick="clearAnswers()">Clear Answers</button>
+
+    <script>
+        function showAnswers() {
+            let answers = JSON.parse(localStorage.getItem('answers')) || [];
+            document.getElementById("answers").innerHTML = answers.length 
+                ? answers.join("<br>") 
+                : "No answers recorded yet.";
+        }
+
+        function clearAnswers() {
+            localStorage.removeItem('answers');
+            document.getElementById("answers").innerHTML = "No answers recorded yet.";
+            alert("Answers cleared!");
+        }
+
+        showAnswers();
+    </script>
+</body>
+</html>
